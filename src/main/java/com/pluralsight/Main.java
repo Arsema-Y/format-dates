@@ -23,6 +23,10 @@ public class Main {
         String formattedDate2 = today.format(formatter2);
         System.out.println("today is: " + formattedDate2);
 
+        //dddd dd,yyyy
+        DateTimeFormatter formatter3 = DateTimeFormatter.ofPattern("EEEE dd, yyyy");
+        String formattedDate3 = today.format(formatter3);
+        System.out.println("today is: " + formattedDate3);
 
 
     }
