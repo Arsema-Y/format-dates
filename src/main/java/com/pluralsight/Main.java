@@ -33,6 +33,13 @@ public class Main {
         String formattedDate4 = today.format(formatter4);
         System.out.println("today is: " + formattedDate4);
 
+        //challenger
+        //HH:mm on dd-mon-yyy
+        DateTimeFormatter formatter5 = DateTimeFormatter.ofPattern("HH:mm 'on' dd-MMM-yyyy");
+        String formattedDate5 = today.format(formatter5);
+        System.out.println("today is: " + formattedDate5);
+
+
 
 
     }
