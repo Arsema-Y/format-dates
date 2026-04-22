@@ -28,6 +28,12 @@ public class Main {
         String formattedDate3 = today.format(formatter3);
         System.out.println("today is: " + formattedDate3);
 
+        //EEEE, MM dd, yyyy HH:mm
+        DateTimeFormatter formatter4 = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy HH:mm");
+        String formattedDate4 = today.format(formatter4);
+        System.out.println("today is: " + formattedDate4);
+
+
 
     }
 }
