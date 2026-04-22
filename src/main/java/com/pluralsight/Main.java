@@ -13,6 +13,10 @@ public class Main {
         LocalDateTime today = LocalDateTime.now();
         TimeZone timeZone = TimeZone.getTimeZone("US/Central");
 
+        //mm/dd/yyy
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        String formattedDate1 = today.format(formatter1);
+        System.out.println("today is: " + formattedDate1);
 
 
 
